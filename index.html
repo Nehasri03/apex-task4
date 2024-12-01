@@ -1,0 +1,85 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Ice Cream Parlor Portfolio</title>  
+    <link rel="stylesheet" href="style.css">  
+</head>  
+<body>  
+    <header>  
+        <h1>Welcome to My Ice Cream Parlor</h1>  
+        <nav> 
+            
+            <ul>  
+                <li><a href="#about">About</a></li>  
+                <li><a href="#projects">Products</a></li>  
+                <li><a href="#contact">Contact</a></li>  
+                <li><a href="todo.html">todo list</a></li>
+            </ul>  
+        </nav>  
+    </header>  
+
+    <section id="about">  
+        <h2>About Us</h2>  
+        <p>We create delicious and unique ice cream flavors using the best local ingredients. Our passion is to bring joy to every scoop!</p>  
+    </section>  
+
+    <section id="projects">  
+
+
+        <h1>Ice Cream Flavors</h1>  
+        <label for="filter">Filter by Category:</label>  
+        <select id="filter" onchange="filterProducts()">  
+            <option value="all">All</option>  
+            <option value="classic">Classic</option>  
+            <option value="premium">Premium</option>  
+        </select>  
+    
+        <label for="sort">Sort by Rating:</label>  
+        <select id="sort" onchange="sortProducts()">  
+            <option value="default">Default</option>  
+            <option value="high">High to Low</option>  
+            <option value="low">Low to High</option>  
+        </select>  
+    
+        <ul id="productList">  
+            <li data-category="classic" data-rating="4">Vanilla Delight - Rating: 4/5</li>  
+            <li data-category="premium" data-rating="5">Chocolate Dream - Rating: 5/5</li>  
+            <li data-category="classic" data-rating="3">Strawberry Bliss - Rating: 3/5</li>  
+            <li data-category="premium" data-rating="4">Mint Freshness - Rating: 4/5</li> 
+            <li data-category="classic" data-rating="4.5">Cookie and cream - Rating: 4.5/5</li> 
+            <li data-category="classic" data-rating="4">Neapolitan - Rating: 3.5/5</li>
+            <li data-category="premium" data-rating="4">Saffron Pistachio - Rating: 4/5</li>
+            <li data-category="premium" data-rating="4">Matcha Green tea - Rating: 4/5</li>
+            <li data-category="classic" data-rating="4">Butter Pecan - Rating: 4/5</li>
+        </ul> 
+
+        <h2>Our Ice Cream Flavors</h2>  
+        <div class="gallery">  
+            <img src="https://i.pinimg.com/736x/f2/13/34/f213344c6a3a926786fcc46609e01a42--make-ice-cream-homemade-ice-cream.jpg" alt="Vanilla Delight">  
+            <img src="https://th.bing.com/th/id/OIP.epsxbROO7550KalOtD6-ewAAAA?rs=1&pid=ImgDetMain" alt="Chocolate Dream">  
+            <img src="https://th.bing.com/th/id/OIP.3flqd0YZKrVFttHUTaZ4rgHaE8?rs=1&pid=ImgDetMain" alt="Strawberry Bliss">  
+            <img src="https://th.bing.com/th/id/OIP.EkWBvMTQ0Av72uMXWRm06QHaHa?pid=ImgDet&w=195&h=195&c=7&dpr=1.3" alt="Mint Freshness">  
+            <img src="https://www.alyonascooking.com/wp-content/uploads/2019/08/cookies-and-cream-ice-cream-recipe-13-585x878.jpg" alt="Cookie and cream">
+        </div>  
+    </section>  
+
+    <section id="contact">  
+        <h2>Contact Us</h2>  
+        <form id="contactForm">  
+            <input type="text" placeholder="Your Name" required>  
+            <input type="email" placeholder="Your Email" required>  
+            <textarea placeholder="Your Message" required></textarea>  
+            <button type="submit">Send</button>  
+        </form>  
+    </section>
+  
+
+    <footer>  
+        <p>&copy; 2024 Ice Cream Parlor Portfolio</p>  
+    </footer>  
+
+    <script src="script.js"></script>  
+</body>  
+</html>
